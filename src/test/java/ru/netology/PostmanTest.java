@@ -1,8 +1,11 @@
 package ru.netology;
 
 import org.junit.jupiter.api.Test;
+
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.Matcher.*;
+import static org.hamcrest.Matchers.equalTo;
+
+;
 
 public class PostmanTest {
     @Test
@@ -21,5 +24,6 @@ public class PostmanTest {
                 .body("data", equalTo("some data"));
 
     }
+
 }
 
